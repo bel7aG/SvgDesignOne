@@ -8,10 +8,25 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1 class="heading">
-    <span class="heading-primary"></span>
-    <span></span>
-  </h1>
+  <svg style="display: none">
+    <defs>
+      <filter id="heading">
+        <feTurbulence baseFrequency="0.02" numOctaves="2" seed="1" />
+        <feDisplacementMap in ="SourceGraphic" scale="15" />
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="container">
+    <h1 class="heading">
+      <span class="heading-primary-main">
+        Belhassen Gharsallah
+      </span>
+      <span class="heading-primary-sub">
+        Web Developer
+      </span>
+    </h1>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
